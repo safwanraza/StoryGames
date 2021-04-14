@@ -1,0 +1,262 @@
+{
+    "rooms" : 
+    [
+        {
+            "id" : 1,
+            "type" : "entry room",
+            "connections" : {"north" : 2},
+            "story" : "'This is the entry of the great Temple of Horus' says a sign on the front wall.\nEven if the room is big, their's nobody in it, except you.",
+            "character" : null,
+            "monster" : null,
+            "items" : {"coins" : 100}
+        },
+        {
+            "id" : 2,
+            "type" : "normal room",
+            "connections" : {"west" : 3, "north" : 4, "east" : 5, "south" : 1},
+            "story" : "This is a dark room, only the torch on the wall allows you to see something. \nTheir's doors on every wall, it seems like the beggining of a big maze.",
+            "character" : null,
+            "monster" : null,
+            "items" : {"sword" : 3}
+        },
+        {
+            "id" : 3,
+            "type" : "normal room",
+            "connections" : {"east" : 2, "north" : 6},
+            "story" : "This is a dark room, only the torch on the wall allows you to see something.\nAs you're crossing it, spider webs cling to you.",
+            "character" : null,
+            "monster" : null,
+            "items" : null
+        },
+        {
+            "id" : 4,
+            "type" : "normal room",
+            "connections" : {"east" : 7, "south" : 2},
+            "story" : "This a hugh room. Ancient armor and skeletons are displayed in the corner of it.\nA small shield seems wearable.",
+            "character" : null,
+            "monster" : null,
+            "items" : {"shield" : 2}
+        },
+        {
+            "id" : 5,
+            "type" : "monster room",
+            "connections" : {"west" : 2},
+            "story" : "This a dead end. As their's no light, you are not able to see what's hiding in the corner, and a little spider jump on you.",
+            "character" : [],
+            "monster" : {"name" : "little spider", "attk" : 1, "life" : 6},
+            "items" : {"coins" : 25}
+        },
+        {
+            "id" : 6,
+            "type" : "normal room",
+            "connections" : {"west" : 8, "south" : 3},
+            "story" : "The room has nothing intersting in it, only a small bag with food",
+            "character" : null,
+            "monster" : null,
+            "items" : {"food" : 25}
+        },
+        {
+            "id" : 7,
+            "type" : "normal room",
+            "connections" : {"west" : 4, "north" : 9, "east" : 10},
+            "story" : "This is a very little room, with torches on the walls. A sign on the wall says \"Ottoko's shop\" with an arrow pointing to the north door",
+            "character" : null,
+            "monster" : null,
+            "items" : null
+        },
+        {
+            "id" : 8,
+            "type" : "normal room",
+            "connections" : {"south" : 11, "north" : 12, "east" : 6},
+            "story" : "The room leads to two oposite doors, one (south) with the fire hieroglyph, the other one (north) with the water hieroglyph.",
+            "character" : null,
+            "monster" : null,
+            "items" : {"coins" : 25}
+        },
+        {
+            "id" : 9,
+            "type" : "monster room",
+            "connections" : {"south" : 7, "north" : 13, "west" : 14},
+            "story" : "This is a big room, only a sign on the wall that says \"Ottoko's shop\" with an arrow pointing to the west door, and skeletons on the floor.\nBut as you're walking, a skeletons grab your kneel and stand up.",
+            "character" : null,
+            "monster" : {"name" : "skeleton", "attk" : 8, "life" : 15},
+            "items" : {"coins" : 50}
+        },
+        {
+            "id" : 10,
+            "type" : "normal room",
+            "connections" : {"north" : 15, "south" : 16, "west" : 7},
+            "story" : "This a small room, leading to two oposite doors. Their's a sign on the wall that says \"Danger on one side, treasure on the other\"",
+            "character" : null,
+            "monster" : null,
+            "items" : null
+        },
+        {
+            "id" : 11,
+            "type" : "monster room",
+            "connections" : {"north" : 8},
+            "story" : "This a small room, filled with water. Only a small path leads to a plateform on wich their's a chest. As you're running to it, a monster made of water stand out and start attacking you.",
+            "character" : null,
+            "monster" : {"name" : "water elemental", "attk" : 5, "life" : 15},
+            "items" : {"coins" : 150}
+        },
+        {
+            "id" : 12,
+            "type" : "monster room",
+            "connections" : {"north" : 17, "south" : 8, "east" : 18},
+            "story" : "You enter a big room. Two doors are on the other walls, but a monster made of fire seperate them from you. You need to fight it in order to change room.",
+            "character" : null,
+            "monster" : {"name" : "fire elemental", "attk" : 10, "life" : 10},
+            "items" : {"coins" : 50, "sword" : 8}
+        },
+        {
+            "id" : 13,
+            "type" : "normal room",
+            "connections" : {"north" : 19, "south" : 9, "east" : 20},
+            "story" : "You enter a simple room. Their's two signs. The first says \"Ottoko's shop\" with an arrow pointing to the south door, and the other one just says \"DANGER\", with an arrow pointing to the east room",
+            "character" : null,
+            "monster" : null,
+            "items" : {"food" : 10}
+        },
+        {
+            "id" : 14,
+            "type" : "shop room",
+            "connections" : {"north" : 21, "east" : 9},
+            "story" : "You finally enter the Ottoko's famous shop. It's a little room, filled with pearls and fabrics, just like in a turkish souk. A small man is sleeping behind a desk, in the corner of the room. You go talk to him.",
+            "character" : "1",
+            "monster" : null,
+            "items" : null
+        },
+        {
+            "id" : 15,
+            "type" : "treasure room",
+            "connections" : {"south" : 10},
+            "story" : "You enter in a treasure room, full of armors, food and coins. What a luck !",
+            "character" : null,
+            "monster" : null,
+            "items" : {"food" : 50, "shield" : 6, "coins" : 150}
+        },
+        {
+            "id" : 16,
+            "type" : "monster room",
+            "connections" : {"north" : 10},
+            "story" : "You enter in a big room, really dark. A big monster start to get up and run in your direction.",
+            "character" : null,
+            "monster" : {"name" : "troll", "attk" : 20, "life" : 20},
+            "items" : {"food" : 25, "coins" : 50}
+        },
+        {
+            "id" : 17,
+            "type" : "shop room",
+            "connections" : {"north" : 22, "south" : 12},
+            "story" : "The room you enter is small, more like a tunnel. Their's an old man sleeping on a carpet on the floor in front of you.\nYou go talk to him.",
+            "character" : "2",
+            "monster" : null,
+            "items" : null
+        },
+        {
+            "id" : 18,
+            "type" : "normal room",
+            "connections" : {"north" : 23, "east" : 12},
+            "story" : "The room is full of objects, swords and armors. It seems like a storehouse.",
+            "character" : null,
+            "monster" : null,
+            "items" : {"sword" : 7}
+        },
+        {
+            "id" : 19,
+            "type" : "normal room",
+            "connections" : {"west" : 25, "south" : 13},
+            "story" : "It's a small room with no much light in it. Their's nothing intersting.",
+            "character" : null,
+            "monster" : null,
+            "items" : null
+        },
+        {
+            "id" : 20,
+            "type" : "monster room",
+            "connections" : {"north" : 26, "west" : 13},
+            "story" : "In the DANGER room, torches on the walls allow you to see only a big rock in the middle, and a big and beautiful door behind it.\nBut as you're getting around the giant rock, it start moving and a giant mummy stand up in front of you.",
+            "character" : null,
+            "monster" : {"name" : "giant mummy", "attk" : 25, "life" : 30},
+            "items" : null
+        },
+        {
+            "id" : 21,
+            "type" : "normal room",
+            "connections" : {"west" : 23, "south" : 14},
+            "story" : "Their's nothing interesting in this room, except a sign, that says \"Ottoko's shop\", pointing to the south room",
+            "character" : null,
+            "monster" : null,
+            "items" : null
+        },
+        {
+            "id" : 22,
+            "type" : "normal room",
+            "connections" : {"north" : 27, "south" : 17, "east" : 24},
+            "story" : "This room seems normal, BUT IT'S ACTUALLY A TRAP !!\nNo, just kidding, their's nothing interesting. Only a sign that says \"DANGER !!\", pointing to the north room.",
+            "character" : null,
+            "monster" : null,
+            "items" : null
+        },
+        {
+            "id" : 23,
+            "type" : "monster room",
+            "connections" : {"north" : 24, "south" : 18, "east" : 21},
+            "story" : "It's a big room, with a lot of spider webs. As you're looking at a sign that says \"Ottoko's shop\", pointing to the east room, a giant spider get out of the webs and jump on you.",
+            "character" : null,
+            "monster" : {"name" : "giant spider", "attk" : 10, "life" : 25},
+            "items" : {"coins" : 50}
+        },
+        {
+            "id" : 24,
+            "type" : "normal room",
+            "connections" : {"west" : 22, "south" : 23, "east" : 25},
+            "story" : "This is a normal room, with torches on the wall. Their's a big shield on the floor.",
+            "character" : null,
+            "monster" : null,
+            "items" : {"shield" : 10}
+        },
+        {
+            "id" : 25,
+            "type" : "monster room",
+            "connections" : {"west" : 24, "east" : 19},
+            "story" : "This is large room, more like a tunnel. Their's food and skeletons are all over the floor.\null start to stand up.",
+            "character" : null,
+            "monster" : {"name" : "skeleton", "attk" : 10, "life" : 7},
+            "items" : {"food" : 75}
+        },
+        {
+            "id" : 26,
+            "type" : "winning room",
+            "connections" : null,
+            "story" : "You enter in a very large room, fulled of treasures, pearls, coins and gold. A giant sarcophagus is in the middle of the room.\nYou run to it, and finally find the pearl you were looking for : the PEARL OF HORUS !!",
+            "character" : null,
+            "monster" : null,
+            "items" : null
+        },
+        {
+            "id" : 27,
+            "type" : "game over room",
+            "connections" : null,
+            "story" : "You enter in a very large room, fulled of treasures, pearls, coins and gold. A giant sarcophagus is in the middle of the room.\nYou run to it, but something is wrong ... You feel the floor is starting to move, and see the walls start breaking.\nWhen you look up to the roof, a giant stone falls on you and crushes you.",
+            "character" : null,
+            "monster" : null,
+            "items" : null
+        }
+    ],
+
+    "characters" : 
+    {
+        "id1" : 
+            {
+                "selling items" : [{"sword" : 15, "price" : 200}, {"food" : 50, "price" : 50}, {"shield" : 10, "price" : 150}],
+                "informations" : "The HORUS PEARL ? I heard that it was hidden where nobody would enter, like just after a really dangerous room, you see ?\nThere's an another dealer like me in the temple, you should go talk to him.\nOh and if you don't know what to chose between north and south, my mother always told to chose north. Hope this advice will help you !"
+            },
+        "id2" :
+            {
+                "selling items" : [{"sword" : 20, "price" : 400}, {"food" : 25, "price" : 50}, {"shield" : 6, "price" : 125}],
+                "informations" : "The HORUS PEARL ? I used to search it in the temple, but now I don't know where it is. Certainly not close to me, if you want an advice !\nBut you should go to the Ottoko's shop, for more informations.\nThe only thing I know, is that you must have to succeed a battle with a really huge monster before finding the pearl."
+            }
+    }
+}
